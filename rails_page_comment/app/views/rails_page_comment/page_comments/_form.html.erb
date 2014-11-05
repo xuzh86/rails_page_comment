@@ -1,0 +1,13 @@
+<div style="text-align: center" id="page_comment">
+  <h1>本画面／機能の詳細仕様説明:</h1><br/>
+<%= form_for(@page_comment, :remote => true) do |f| %>
+   <%= hidden_field_tag :authenticity_token, @_csrf_token%>
+  <div class="field">
+    <%= f.hidden_field :page_uri%>
+    <%= f.text_area :content, cols: 90, rows: 20%>
+  </div>
+  <div class="actions">
+    <%= f.submit "保存"%>
+  </div>
+<% end %>
+</div>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Requst uri:</strong>
+  <%= @page_comment.requst_uri %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @page_comment.content %>
+</p>
+
+<%= link_to 'Edit', edit_page_comment_path(@page_comment) %> |
+<%= link_to 'Back', page_comments_path %>
