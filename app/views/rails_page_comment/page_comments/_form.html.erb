@@ -4,7 +4,7 @@
    <%= hidden_field_tag :authenticity_token, @_csrf_token%>
   <div class="field">
     <%= f.hidden_field :page_uri%>
-    <%= f.text_area :content, cols: 90, rows: 20%>
+    <%= f.text_area :content, cols: RailsPageComment.text_area_cols, rows: RailsPageComment.text_area_rows%>
   </div>
   <div class="actions">
     <%= f.submit "保存"%>

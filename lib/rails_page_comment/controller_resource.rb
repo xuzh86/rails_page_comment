@@ -3,7 +3,7 @@ module RailsPageComment
   # This class is used internally, so you do not need to call methods directly on it.
   class ControllerResource # :nodoc:
 
-    ActionView::Base.send(:include, RailsPageComment::Engine.routes.url_helpers) # brings ActionDispatch::Routing::UrlFor
+    ActionView::Base.send(:include, RailsPageComment::Engine.routes.url_helpers) if defined? RailsPageComment::Engine # brings ActionDispatch::Routing::UrlFor
     ActionView::Base.send(:include, ActionView::Helpers::TagHelper)
     ActionView::Base.send(:include, ActiveSupport::Configurable)
     ActionView::Base.send(:include, ActionController::RequestForgeryProtection)

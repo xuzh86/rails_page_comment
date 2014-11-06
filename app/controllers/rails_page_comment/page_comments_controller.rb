@@ -34,7 +34,14 @@ module RailsPageComment
 
     # PATCH/PUT /page_comments/1
     def update
-      if @page_comment.update(update_page_comment_params)
+      @page_comment.attributes = update_page_comment_params
+      if @page_comment.valid?
+        if @page_comment.changed?
+          RailsPageComment.notify_changes_method_name.each do |m|
+            self.class.notify_changes_class.send(m, @page_comment).deliver
+          end
+        end
+        @page_comment.save
         render :edit
       else
         render :edit
@@ -55,7 +62,7 @@ module RailsPageComment
 
       # Only allow a trusted parameter "white list" through.
       def update_page_comment_params
-        params.require(:page_comment).permit(:content)
+        params.require(:page_comment).permit(:content, :page_uri)
       end
 
   end

@@ -18,6 +18,10 @@ module RailsPageComment
       end
 
 
+      def notify_changes_class
+        RailsPageComment.notify_changes_class_name.to_s.camelize.constantize
+      end
+
     end
 
     def self.included(base)
