@@ -18,7 +18,9 @@ gem 'rails_page_comment'
 
 `rails generate rails_page_comment:install`
 
-### Setting
+## Setting
+
+### Use initializer to set Features
 
 To use set it show on the page or not, add this to an initializer.
 
