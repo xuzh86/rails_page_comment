@@ -1,0 +1,2 @@
+<%= url_for(@page_comment.page_uri) %><br/>
+<%= @page_comment.content.to_s.gsub("\t|\n", "<br/>") %>
