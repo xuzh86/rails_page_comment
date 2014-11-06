@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["xuzh86@gmail.com"]
   s.homepage    = "https://github.com/xuzh86/rails_page_comment"
   s.summary     = "Comment Rails Page."
-  s.description = "Comment Rails Page."
+  s.description = "Comment Rails Page. Send email when page's comment changed."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]

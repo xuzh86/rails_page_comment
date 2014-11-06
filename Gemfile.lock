@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails_page_comment (0.0.3)
+    rails_page_comment (0.1.0)
       rails (~> 4.1.2)
 
 GEM
