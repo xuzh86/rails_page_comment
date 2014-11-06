@@ -8,7 +8,7 @@ Write comment on the page.
 
 ## Installation
 
-For basic usage just include ckeditor gem:
+For basic usage just include rails_page_comment gem:
 
 ```ruby
 gem 'rails_page_comment'
