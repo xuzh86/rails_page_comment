@@ -26,7 +26,7 @@ To use set it show on the page or not, add this to an initializer.
 ```ruby
 # in config/initializers/rails_page_comment.rb
 
-Ckeditor.setup do |config|
+RailsPageComment.setup do |config|
   config.show_on_page = true/false
 end
 ```
