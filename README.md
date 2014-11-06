@@ -14,16 +14,13 @@ For basic usage just include rails_page_comment gem:
 gem 'rails_page_comment'
 ```
 
-
 ### How generate config files
-
 
 `rails generate rails_page_comment:install`
 
+### Setting
 
 To use set it show on the page or not, add this to an initializer.
-
-### Setting
 
 ```ruby
 # in config/initializers/rails_page_comment.rb
